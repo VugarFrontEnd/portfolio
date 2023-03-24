@@ -1,0 +1,89 @@
+section#experience {
+    margin-top: -0.5rem;
+}
+
+.experience__container {
+    display: flex;
+    gap: 10%;
+}
+
+.experience__frontend, .experience__web__design {
+    flex-basis: 45%;
+    border-radius: 2rem;
+    background: var(--color-bg-variant);
+    padding: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.experience__frontend:hover, .experience__web__design:hover {
+    background: transparent;
+    border-color: var(--color-bg-variant);
+    backdrop-filter: blur(6px);
+}
+
+.experience__frontend > h5, .experience__web__design > h5 {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skill__icon {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+}
+
+.design__skills, .frontend__skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.frontend__skills__column__one, .frontend__skills__column__two, .design__skills__column__one, .design__skills__column__two {
+    flex-basis: 35%;
+}
+
+.frontend__skill, .design__skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill__content {
+    margin: 1rem 0;
+}
+
+.frontend__skill h5, .design__skill h5 {
+    font-size: 0.55rem;
+}
+
+.frontend__skill h2, .design__skill h2 {
+    font-size: 0.8rem;
+}
+
+/*************MEDIA QUERIES (MEDIUM DEVICES)**************/
+
+@media screen and (max-width: 1024px) {
+
+    section#experience {
+        margin-top: 6rem;
+    }
+
+
+    .experience__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/**************MEDIA QUERIES (SMALL DEVICES)*************/
+
+@media screen and (max-width: 600px) {
+
+    section#experience {
+        margin-top: 6rem;
+    }
+
+}

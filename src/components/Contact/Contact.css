@@ -1,0 +1,89 @@
+section#contact > h5 {
+    margin-top: 4rem;
+}
+
+.contact__container {
+    display: flex;
+}
+
+.contact__options {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact__option {
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    width: 60%;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-bg-variant);
+    cursor: default;
+}
+
+.contact__option h5 {
+    color: var(--color-light);
+}
+.contact__option a {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.contact__option-icon {
+    font-size: 1.7rem;
+}
+
+/************* FORM SECTION *************/
+
+form {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+    letter-spacing: 3px;
+}
+
+input:focus, textarea:focus {
+    backdrop-filter: blur(3px);
+}
+
+.contact__form button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+}
+
+/*************MEDIA QUERIES (MEDIUM DEVICES)**************/
+
+@media screen and (max-width: 1224px) {
+
+    .contact__container {
+        flex-direction: column;
+    }
+
+    .contact__option {
+        width: 100%;
+    }
+
+}
